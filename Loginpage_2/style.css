@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+    radial-gradient(
+        circle at top left,
+        rgba(255,255,255,0.9),
+        transparent 35%
+    ),
+    linear-gradient(
+        135deg,
+        #f8c8dc,
+        #f5a9c5,
+        #f4a4b8
+    );
+}
+
+.login-card{
+    width:380px;
+    padding:50px 40px;
+    background:rgba(255,255,255,0.18);
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:25px;
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    box-shadow:0 8px 30px rgba(0,0,0,0.08);
+}
+
+.login-card h1{
+    color:#1b1b4f;
+    font-size:42px;
+    margin-bottom:35px;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"]{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    margin-bottom:15px;
+    background:rgba(255,255,255,0.45);
+    outline:none;
+    font-size:15px;
+}
+
+.remember{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:25px;
+    color:#444;
+    font-size:14px;
+}
+
+.signin-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#2a165f;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(42,22,95,0.3);
+    transition:0.3s;
+}
+
+.signin-btn:hover{
+    transform:translateY(-3px);
+}
+
+.forgot{
+    display:block;
+    text-align:center;
+    margin:15px 0 30px;
+    text-decoration:none;
+    color:#555;
+    font-size:14px;
+}
+
+.or-section{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.line{
+    flex:1;
+    height:1px;
+    background:#777;
+}
+
+.or-section span{
+    color:#555;
+}
+
+.social-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:rgba(255,255,255,0.55);
+    margin-bottom:15px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.social-btn:hover{
+    transform:scale(1.02);
+}
+
+.icon{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    color:#2a165f;
+}
+
+.signup{
+    text-align:center;
+    margin-top:25px;
+    color:#444;
+}
+
+.signup a{
+    color:#2a165f;
+    text-decoration:none;
+    font-weight:600;
+}
