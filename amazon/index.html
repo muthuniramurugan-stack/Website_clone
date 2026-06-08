@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Clone</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#e3e6e6;
+}
+
+/* Navbar */
+
+.navbar{
+    height:60px;
+    background:#131921;
+    color:white;
+
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#ff9900;
+}
+
+.location p,
+.account p,
+.orders p{
+    font-size:12px;
+}
+
+.location h4,
+.account h4,
+.orders h4{
+    font-size:14px;
+}
+
+.search{
+    display:flex;
+    width:50%;
+}
+
+.search input{
+    width:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+}
+
+.search button{
+    border:none;
+    padding:10px 20px;
+    background:#febd69;
+    cursor:pointer;
+}
+
+.cart{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Menu */
+
+.menu{
+    background:#232f3e;
+    color:white;
+    height:40px;
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+    padding-left:20px;
+}
+
+/* Hero */
+
+.hero{
+    height:350px;
+
+    background:url("https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1600");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+
+.hero-msg{
+    background:white;
+    padding:10px;
+    width:90%;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* Products */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:20px;
+}
+
+.box{
+    background:white;
+    padding:15px;
+}
+
+.box h2{
+    margin-bottom:10px;
+}
+
+.box img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.box a{
+    display:block;
+    margin-top:10px;
+    text-decoration:none;
+    color:#007185;
+}
+
+/* Footer */
+
+.footer-top{
+    background:#37475a;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.footer{
+    background:#232f3e;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    padding:40px;
+}
+
+.footer ul{
+    list-style:none;
+}
+
+.footer li{
+    margin:10px 0;
+}
+
+.copyright{
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.products{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.search{
+    width:35%;
+}
+}
+
+@media(max-width:600px){
+
+.navbar{
+    flex-wrap:wrap;
+    height:auto;
+    padding:10px;
+}
+
+.search{
+    width:100%;
+    margin:10px 0;
+}
+
+.products{
+    grid-template-columns:1fr;
+}
+
+.footer{
+    flex-direction:column;
+    gap:20px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+    <div class="logo">amazon</div>
+
+    <div class="location">
+        <p>Deliver to</p>
+        <h4>India</h4>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Search Amazon">
+        <button>🔍</button>
+    </div>
+
+    <div class="account">
+        <p>Hello, Sign in</p>
+        <h4>Account & Lists</h4>
+    </div>
+
+    <div class="orders">
+        <p>Returns</p>
+        <h4>& Orders</h4>
+    </div>
+
+    <div class="cart">
+        🛒 Cart
+    </div>
+
+</div>
+
+<!-- Menu -->
+
+<div class="menu">
+    <p>All</p>
+    <p>Today's Deals</p>
+    <p>Customer Service</p>
+    <p>Electronics</p>
+    <p>Fashion</p>
+    <p>Books</p>
+</div>
+
+<!-- Hero -->
+
+<div class="hero">
+    <div class="hero-msg">
+        You are on Amazon Clone. Explore products and deals.
+    </div>
+</div>
+
+<!-- Products -->
+
+<div class="products">
+
+    <div class="box">
+        <h2>Gaming Accessories</h2>
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e">
+        <a href="#">Shop Now</a>
+    </div>
+
+    <div class="box">
+        <h2>Smart Phones</h2>
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+        <a href="#">Shop Now</a>
+    </div>
+
+    <div class="box">
+        <h2>Fashion</h2>
+        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050">
+        <a href="#">Shop Now</a>
+    </div>
+
+    <div class="box">
+        <h2>Furniture</h2>
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+        <a href="#">Shop Now</a>
+    </div>
+
+    <div class="box">
+        <h2>Beauty Products</h2>
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+        <a href="#">Shop Now</a>
+    </div>
+
+    <div class="box">
+        <h2>Kitchen Items</h2>
+        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba">
+        <a href="#">Shop Now</a>
+    </div>
+
+    <div class="box">
+        <h2>Laptops</h2>
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853">
+        <a href="#">Shop Now</a>
+    </div>
+
+    <div class="box">
+        <h2>Watches</h2>
+        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49">
+        <a href="#">Shop Now</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+
+<div class="footer-top">
+    Back to Top
+</div>
+
+<div class="footer">
+
+    <ul>
+        <h3>Get to Know Us</h3>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Blog</li>
+    </ul>
+
+    <ul>
+        <h3>Make Money</h3>
+        <li>Sell Products</li>
+        <li>Affiliate</li>
+        <li>Advertise</li>
+    </ul>
+
+    <ul>
+        <h3>Help</h3>
+        <li>Support</li>
+        <li>Shipping</li>
+        <li>Returns</li>
+    </ul>
+
+</div>
+
+<div class="copyright">
+    © 2026 Amazon Clone | HTML & CSS Project
+</div>
+
+</body>
+</html>
